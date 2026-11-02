@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Visual step-by-step recipes from around the world | DishByStep</title>
+<meta name="description" content="DishByStep: every recipe photographed step by step. Browse visual recipes from 40+ cuisines and cook with confidence.">
+<link rel="canonical" href="https://dishbystep.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap">
+<a class="brand" href="index.html">Dish<span>ByStep</span></a>
+<nav class="site-nav">
+<a href="index.html">Recipes</a>
+<a href="cuisines/index.html">Cuisines</a>
+<a href="about.html">About</a>
+</nav>
+</div></header>
+<main>
+
+<section class="hero wrap">
+<h1>Every recipe in the world, <span>shown step by step.</span></h1>
+<p class="lead">Real dishes photographed at every stage, so you always know what
+comes next. No guessing, no walls of text. Just follow the pictures.</p>
+<div class="search-row">
+<input id="q" type="search" placeholder="Search recipes or cuisines..." aria-label="Search recipes">
+</div>
+<div class="filter-row">
+<select id="cuisineFilter" aria-label="Filter by cuisine">
+<option value="all">All cuisines</option>
+<option value="Argentina">Argentina</option>
+<option value="Australia">Australia</option>
+<option value="Austria">Austria</option>
+<option value="Belgium">Belgium</option>
+<option value="Brazil">Brazil</option>
+<option value="China">China</option>
+<option value="Colombia">Colombia</option>
+<option value="Cuba">Cuba</option>
+<option value="Egypt">Egypt</option>
+<option value="El Salvador">El Salvador</option>
+<option value="Ethiopia">Ethiopia</option>
+<option value="Finland">Finland</option>
+<option value="France">France</option>
+<option value="Germany">Germany</option>
+<option value="Greece">Greece</option>
+<option value="Hawaii">Hawaii</option>
+<option value="Hong Kong">Hong Kong</option>
+<option value="India">India</option>
+<option value="Indonesia">Indonesia</option>
+<option value="Ireland">Ireland</option>
+<option value="Italy">Italy</option>
+<option value="Jamaica">Jamaica</option>
+<option value="Japan">Japan</option>
+<option value="Lebanon">Lebanon</option>
+<option value="Malaysia">Malaysia</option>
+<option value="Mexico">Mexico</option>
+<option value="Nepal">Nepal</option>
+<option value="Netherlands">Netherlands</option>
+<option value="Palestine">Palestine</option>
+<option value="Peru">Peru</option>
+<option value="Philippines">Philippines</option>
+<option value="Portugal">Portugal</option>
+<option value="Puerto Rico">Puerto Rico</option>
+<option value="Russia">Russia</option>
+<option value="Singapore">Singapore</option>
+<option value="South Korea">South Korea</option>
+<option value="Spain">Spain</option>
+<option value="Sweden">Sweden</option>
+<option value="Switzerland">Switzerland</option>
+<option value="Taiwan">Taiwan</option>
+<option value="Thailand">Thailand</option>
+<option value="Turkey">Turkey</option>
+<option value="United Arab Emirates">United Arab Emirates</option>
+<option value="United Kingdom">United Kingdom</option>
+<option value="United States">United States</option>
+<option value="Vietnam">Vietnam</option>
+</select>
+</div>
+<p class="count-note" id="countNote">187 of 187 recipes</p>
+</section>
+<section class="wrap"><div class="grid" id="grid">
+<a class="card" href="recipes/swedish-cinnamon-buns/" data-title="Soft Swedish Cinnamon Buns" data-country="Sweden">
+<img src="https://cdn.dishbystep.com/swedish-cinnamon-buns/01-cover.jpg" alt="Soft Swedish Cinnamon Buns" loading="lazy">
+<div class="card-body"><h3>Soft Swedish Cinnamon Buns</h3><div class="card-meta">Sweden &middot; Serves 12</div></div>
+</a>
+<a class="card" href="recipes/classic-italian-gelato/" data-title="Silky Italian Gelato" data-country="Italy">
+<img src="https://cdn.dishbystep.com/classic-italian-gelato/01-cover.jpg" alt="Silky Italian Gelato" loading="lazy">
+<div class="card-body"><h3>Silky Italian Gelato</h3><div class="card-meta">Italy &middot; Serves 6</div></div>
+</a>
+<a class="card" href="recipes/classic-beef-chili/" data-title="Hearty Classic Beef Chili" data-country="United States">
+<img src="https://cdn.dishbystep.com/classic-beef-chili/01-cover.jpg" alt="Hearty Classic Beef Chili" loading="lazy">
+<div class="card-body"><h3>Hearty Classic Beef Chili</h3><div class="card-meta">United States &middot; Serves 6</div></div>
+</a>
+<a class="card" href="recipes/french-lemon-tart/" data-title="Silky French Lemon Tart" data-country="France">
+<img src="https://cdn.dishbystep.com/french-lemon-tart/01-cover.jpg" alt="Silky French Lemon Tart" loading="lazy">
+<div class="card-body"><h3>Silky French Lemon Tart</h3><div class="card-meta">France &middot; Serves 8</div></div>
+</a>
+<a class="card" href="recipes/turkish-doner-kebab/" data-title="Homemade Turkish Doner Kebab" data-country="Turkey">
+<img src="https://cdn.dishbystep.com/turkish-doner-kebab/01-cover.jpg" alt="Homemade Turkish Doner Kebab" loading="lazy">
+<div class="card-body"><h3>Homemade Turkish Doner Kebab</h3><div class="card-meta">Turkey &middot; Serves 6 wraps</div></div>
+</a>
+<a class="card" href="recipes/indian-falooda/" data-title="Easy Royal Falooda" data-country="India">
+<img src="https://cdn.dishbystep.com/indian-falooda/01-cover.jpg" alt="Easy Royal Falooda" loading="lazy">
+<div class="card-body"><h3>Easy Royal Falooda</h3><div class="card-meta">India &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/hokkaido-milk-bread/" data-title="Cloud-Soft Hokkaido Milk Bread" data-country="Japan">
+<img src="https://cdn.dishbystep.com/hokkaido-milk-bread/01-cover.jpg" alt="Cloud-Soft Hokkaido Milk Bread" loading="lazy">
+<div class="card-body"><h3>Cloud-Soft Hokkaido Milk Bread</h3><div class="card-meta">Japan &middot; Serves 8</div></div>
+</a>
+<a class="card" href="recipes/chicken-and-waffles/" data-title="Crispy Chicken and Waffles" data-country="United States">
+<img src="https://cdn.dishbystep.com/chicken-and-waffles/01-cover.jpg" alt="Crispy Chicken and Waffles" loading="lazy">
+<div class="card-body"><h3>Crispy Chicken and Waffles</h3><div class="card-meta">United States &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/lebanese-shish-tawook/" data-title="Lebanese Shish Tawook" data-country="Lebanon">
+<img src="https://cdn.dishbystep.com/lebanese-shish-tawook/01-cover.jpg" alt="Lebanese Shish Tawook" loading="lazy">
+<div class="card-body"><h3>Lebanese Shish Tawook</h3><div class="card-meta">Lebanon &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/italian-osso-buco/" data-title="Italian Osso Buco" data-country="Italy">
+<img src="https://cdn.dishbystep.com/italian-osso-buco/01-cover.jpg" alt="Italian Osso Buco" loading="lazy">
+<div class="card-body"><h3>Italian Osso Buco</h3><div class="card-meta">Italy &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/japanese-strawberry-daifuku/" data-title="Japanese Strawberry Daifuku" data-country="Japan">
+<img src="https://cdn.dishbystep.com/japanese-strawberry-daifuku/01-cover.jpg" alt="Japanese Strawberry Daifuku" loading="lazy">
+<div class="card-body"><h3>Japanese Strawberry Daifuku</h3><div class="card-meta">Japan &middot; Serves 8</div></div>
+</a>
+<a class="card" href="recipes/taiwanese-beef-noodle-soup/" data-title="Taiwanese Beef Noodle Soup" data-country="Taiwan">
+<img src="https://cdn.dishbystep.com/taiwanese-beef-noodle-soup/01-cover.jpg" alt="Taiwanese Beef Noodle Soup" loading="lazy">
+<div class="card-body"><h3>Taiwanese Beef Noodle Soup</h3><div class="card-meta">Taiwan &middot; Serves 4 bowls</div></div>
+</a>
+<a class="card" href="recipes/hong-kong-egg-tarts/" data-title="Hong Kong Egg Tarts" data-country="Hong Kong">
+<img src="https://cdn.dishbystep.com/hong-kong-egg-tarts/01-cover.jpg" alt="Hong Kong Egg Tarts" loading="lazy">
+<div class="card-body"><h3>Hong Kong Egg Tarts</h3><div class="card-meta">Hong Kong &middot; Serves 12</div></div>
+</a>
+<a class="card" href="recipes/brazilian-acai-bowl/" data-title="Brazilian Acai Bowl" data-country="Brazil">
+<img src="https://cdn.dishbystep.com/brazilian-acai-bowl/01-cover.jpg" alt="Brazilian Acai Bowl" loading="lazy">
+<div class="card-body"><h3>Brazilian Acai Bowl</h3><div class="card-meta">Brazil &middot; Serves 2 bowls</div></div>
+</a>
+<a class="card" href="recipes/new-orleans-beignets/" data-title="New Orleans Beignets" data-country="United States">
+<img src="https://cdn.dishbystep.com/new-orleans-beignets/01-cover.jpg" alt="New Orleans Beignets" loading="lazy">
+<div class="card-body"><h3>New Orleans Beignets</h3><div class="card-meta">United States &middot; Serves 24 beignets (serves 6)</div></div>
+</a>
+<a class="card" href="recipes/indian-masala-dosa/" data-title="Masala Dosa" data-country="India">
+<img src="https://cdn.dishbystep.com/indian-masala-dosa/01-cover.jpg" alt="Masala Dosa" loading="lazy">
+<div class="card-body"><h3>Masala Dosa</h3><div class="card-meta">India &middot; Serves 10 dosas (serves 5)</div></div>
+</a>
+<a class="card" href="recipes/korean-kimbap/" data-title="Korean Kimbap" data-country="South Korea">
+<img src="https://cdn.dishbystep.com/korean-kimbap/01-cover.jpg" alt="Korean Kimbap" loading="lazy">
+<div class="card-body"><h3>Korean Kimbap</h3><div class="card-meta">South Korea &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/classic-carrot-cake/" data-title="Classic Carrot Cake" data-country="United States">
+<img src="https://cdn.dishbystep.com/classic-carrot-cake/01-cover.jpg" alt="Classic Carrot Cake" loading="lazy">
+<div class="card-body"><h3>Classic Carrot Cake</h3><div class="card-meta">United States &middot; Serves 12 slices</div></div>
+</a>
+<a class="card" href="recipes/mexican-chilaquiles-rojos/" data-title="Mexican Chilaquiles Rojos" data-country="Mexico">
+<img src="https://cdn.dishbystep.com/mexican-chilaquiles-rojos/01-cover.jpg" alt="Mexican Chilaquiles Rojos" loading="lazy">
+<div class="card-body"><h3>Mexican Chilaquiles Rojos</h3><div class="card-meta">Mexico &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/greek-loukoumades/" data-title="Greek Loukoumades" data-country="Greece">
+<img src="https://cdn.dishbystep.com/greek-loukoumades/01-cover.jpg" alt="Greek Loukoumades" loading="lazy">
+<div class="card-body"><h3>Greek Loukoumades</h3><div class="card-meta">Greece &middot; Serves 6</div></div>
+</a>
+<a class="card" href="recipes/dutch-stroopwafels/" data-title="Dutch Stroopwafels" data-country="Netherlands">
+<img src="https://cdn.dishbystep.com/dutch-stroopwafels/01-cover.jpg" alt="Dutch Stroopwafels" loading="lazy">
+<div class="card-body"><h3>Dutch Stroopwafels</h3><div class="card-meta">Netherlands &middot; Serves 12</div></div>
+</a>
+<a class="card" href="recipes/classic-french-crepes/" data-title="Classic French Crepes" data-country="France">
+<img src="https://cdn.dishbystep.com/classic-french-crepes/01-cover.jpg" alt="Classic French Crepes" loading="lazy">
+<div class="card-body"><h3>Classic French Crepes</h3><div class="card-meta">France &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/french-quiche-lorraine/" data-title="Classic Quiche Lorraine" data-country="France">
+<img src="https://cdn.dishbystep.com/french-quiche-lorraine/01-cover.jpg" alt="Classic Quiche Lorraine" loading="lazy">
+<div class="card-body"><h3>Classic Quiche Lorraine</h3><div class="card-meta">France &middot; Serves 6</div></div>
+</a>
+<a class="card" href="recipes/singaporean-hainanese-chicken-rice/" data-title="Hainanese Chicken Rice" data-country="Singapore">
+<img src="https://cdn.dishbystep.com/singaporean-hainanese-chicken-rice/01-cover.jpg" alt="Hainanese Chicken Rice" loading="lazy">
+<div class="card-body"><h3>Hainanese Chicken Rice</h3><div class="card-meta">Singapore &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/classic-cacio-e-pepe/" data-title="Classic Cacio e Pepe" data-country="Italy">
+<img src="https://cdn.dishbystep.com/classic-cacio-e-pepe/01-cover.jpg" alt="Classic Cacio e Pepe" loading="lazy">
+<div class="card-body"><h3>Classic Cacio e Pepe</h3><div class="card-meta">Italy &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/japanese-okonomiyaki/" data-title="Japanese Okonomiyaki" data-country="Japan">
+<img src="https://cdn.dishbystep.com/japanese-okonomiyaki/01-cover.jpg" alt="Japanese Okonomiyaki" loading="lazy">
+<div class="card-body"><h3>Japanese Okonomiyaki</h3><div class="card-meta">Japan &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/greek-chicken-souvlaki/" data-title="Greek Chicken Souvlaki" data-country="Greece">
+<img src="https://cdn.dishbystep.com/greek-chicken-souvlaki/01-cover.jpg" alt="Greek Chicken Souvlaki" loading="lazy">
+<div class="card-body"><h3>Greek Chicken Souvlaki</h3><div class="card-meta">Greece &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/chinese-dan-dan-noodles/" data-title="Dan Dan Noodles" data-country="China">
+<img src="https://cdn.dishbystep.com/chinese-dan-dan-noodles/01-cover.jpg" alt="Dan Dan Noodles" loading="lazy">
+<div class="card-body"><h3>Dan Dan Noodles</h3><div class="card-meta">China &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/chicken-enchiladas/" data-title="Chicken Enchiladas" data-country="Mexico">
+<img src="https://cdn.dishbystep.com/chicken-enchiladas/01-cover.jpg" alt="Chicken Enchiladas" loading="lazy">
+<div class="card-body"><h3>Chicken Enchiladas</h3><div class="card-meta">Mexico &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/swiss-cheese-fondue/" data-title="Classic Swiss Cheese Fondue" data-country="Switzerland">
+<img src="https://cdn.dishbystep.com/swiss-cheese-fondue/01-cover.jpg" alt="Classic Swiss Cheese Fondue" loading="lazy">
+<div class="card-body"><h3>Classic Swiss Cheese Fondue</h3><div class="card-meta">Switzerland &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/thai-tom-yum-goong/" data-title="Thai Tom Yum Goong" data-country="Thailand">
+<img src="https://cdn.dishbystep.com/thai-tom-yum-goong/01-cover.jpg" alt="Thai Tom Yum Goong" loading="lazy">
+<div class="card-body"><h3>Thai Tom Yum Goong</h3><div class="card-meta">Thailand &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/malaysian-nasi-lemak/" data-title="Malaysian Nasi Lemak" data-country="Malaysia">
+<img src="https://cdn.dishbystep.com/malaysian-nasi-lemak/01-cover.jpg" alt="Malaysian Nasi Lemak" loading="lazy">
+<div class="card-body"><h3>Malaysian Nasi Lemak</h3><div class="card-meta">Malaysia &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/french-macarons/" data-title="French Macarons" data-country="France">
+<img src="https://cdn.dishbystep.com/french-macarons/01-cover.jpg" alt="French Macarons" loading="lazy">
+<div class="card-body"><h3>French Macarons</h3><div class="card-meta">France &middot; Serves 12</div></div>
+</a>
+<a class="card" href="recipes/peruvian-ceviche/" data-title="Peruvian Ceviche" data-country="Peru">
+<img src="https://cdn.dishbystep.com/peruvian-ceviche/01-cover.jpg" alt="Peruvian Ceviche" loading="lazy">
+<div class="card-body"><h3>Peruvian Ceviche</h3><div class="card-meta">Peru &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/thai-mango-sticky-rice/" data-title="Thai Mango Sticky Rice" data-country="Thailand">
+<img src="https://cdn.dishbystep.com/thai-mango-sticky-rice/01-cover.jpg" alt="Thai Mango Sticky Rice" loading="lazy">
+<div class="card-body"><h3>Thai Mango Sticky Rice</h3><div class="card-meta">Thailand &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/korean-bibimbap/" data-title="Korean Bibimbap" data-country="South Korea">
+<img src="https://cdn.dishbystep.com/korean-bibimbap/01-cover.jpg" alt="Korean Bibimbap" loading="lazy">
+<div class="card-body"><h3>Korean Bibimbap</h3><div class="card-meta">South Korea &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/falafel-wraps/" data-title="Falafel Wraps" data-country="Lebanon">
+<img src="https://cdn.dishbystep.com/falafel-wraps/01-cover.jpg" alt="Falafel Wraps" loading="lazy">
+<div class="card-body"><h3>Falafel Wraps</h3><div class="card-meta">Lebanon &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/classic-spaghetti-bolognese/" data-title="Classic Spaghetti Bolognese" data-country="Italy">
+<img src="https://cdn.dishbystep.com/classic-spaghetti-bolognese/01-cover.jpg" alt="Classic Spaghetti Bolognese" loading="lazy">
+<div class="card-body"><h3>Classic Spaghetti Bolognese</h3><div class="card-meta">Italy &middot; Serves 6</div></div>
+</a>
+<a class="card" href="recipes/turkish-baklava/" data-title="Turkish Baklava" data-country="Turkey">
+<img src="https://cdn.dishbystep.com/turkish-baklava/01-cover.jpg" alt="Turkish Baklava" loading="lazy">
+<div class="card-body"><h3>Turkish Baklava</h3><div class="card-meta">Turkey &middot; Serves 24</div></div>
+</a>
+<a class="card" href="recipes/thai-green-curry/" data-title="Thai Green Curry" data-country="Thailand">
+<img src="https://cdn.dishbystep.com/thai-green-curry/01-cover.jpg" alt="Thai Green Curry" loading="lazy">
+<div class="card-body"><h3>Thai Green Curry</h3><div class="card-meta">Thailand &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/french-ratatouille/" data-title="French Ratatouille" data-country="France">
+<img src="https://cdn.dishbystep.com/french-ratatouille/01-cover.jpg" alt="French Ratatouille" loading="lazy">
+<div class="card-body"><h3>French Ratatouille</h3><div class="card-meta">France &middot; Serves 6</div></div>
+</a>
+<a class="card" href="recipes/egyptian-koshari/" data-title="Egyptian Koshari" data-country="Egypt">
+<img src="https://cdn.dishbystep.com/egyptian-koshari/01-cover.jpg" alt="Egyptian Koshari" loading="lazy">
+<div class="card-body"><h3>Egyptian Koshari</h3><div class="card-meta">Egypt &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/sicilian-cannoli/" data-title="Sicilian Cannoli" data-country="Italy">
+<img src="https://cdn.dishbystep.com/sicilian-cannoli/01-cover.jpg" alt="Sicilian Cannoli" loading="lazy">
+<div class="card-body"><h3>Sicilian Cannoli</h3><div class="card-meta">Italy &middot; Serves 12</div></div>
+</a>
+<a class="card" href="recipes/chinese-soup-dumplings/" data-title="Pork Soup Dumplings" data-country="China">
+<img src="https://cdn.dishbystep.com/chinese-soup-dumplings/01-cover.jpg" alt="Pork Soup Dumplings" loading="lazy">
+<div class="card-body"><h3>Pork Soup Dumplings</h3><div class="card-meta">China &middot; Serves 12</div></div>
+</a>
+<a class="card" href="recipes/mexican-churros/" data-title="Mexican Churros" data-country="Mexico">
+<img src="https://cdn.dishbystep.com/mexican-churros/01-cover.jpg" alt="Mexican Churros" loading="lazy">
+<div class="card-body"><h3>Mexican Churros</h3><div class="card-meta">Mexico &middot; Serves 6</div></div>
+</a>
+<a class="card" href="recipes/palestinian-knafeh/" data-title="Golden Crispy Knafeh" data-country="Palestine">
+<img src="https://cdn.dishbystep.com/palestinian-knafeh/01-cover.jpg" alt="Golden Crispy Knafeh" loading="lazy">
+<div class="card-body"><h3>Golden Crispy Knafeh</h3><div class="card-meta">Palestine &middot; Serves 8</div></div>
+</a>
+<a class="card" href="recipes/french-creme-brulee/" data-title="Classic French Crème Brûlée" data-country="France">
+<img src="https://cdn.dishbystep.com/french-creme-brulee/01-cover.jpg" alt="Classic French Crème Brûlée" loading="lazy">
+<div class="card-body"><h3>Classic French Crème Brûlée</h3><div class="card-meta">France &middot; Serves 6</div></div>
+</a>
+<a class="card" href="recipes/vietnamese-pho/" data-title="Vietnamese Pho Bo" data-country="Vietnam">
+<img src="https://cdn.dishbystep.com/vietnamese-pho/01-cover.jpg" alt="Vietnamese Pho Bo" loading="lazy">
+<div class="card-body"><h3>Vietnamese Pho Bo</h3><div class="card-meta">Vietnam &middot; Serves 6</div></div>
+</a>
+<a class="card" href="recipes/homemade-sushi-rolls/" data-title="Homemade Sushi Rolls" data-country="Japan">
+<img src="https://cdn.dishbystep.com/homemade-sushi-rolls/01-cover.jpg" alt="Homemade Sushi Rolls" loading="lazy">
+<div class="card-body"><h3>Homemade Sushi Rolls</h3><div class="card-meta">Japan &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/classic-pasteis-de-nata/" data-title="Classic Pasteis de Nata" data-country="Portugal">
+<img src="https://cdn.dishbystep.com/classic-pasteis-de-nata/01-cover.jpg" alt="Classic Pasteis de Nata" loading="lazy">
+<div class="card-body"><h3>Classic Pasteis de Nata</h3><div class="card-meta">Portugal &middot; Serves 12</div></div>
+</a>
+<a class="card" href="recipes/viral-dubai-chocolate/" data-title="Viral Dubai Chocolate" data-country="United Arab Emirates">
+<img src="https://cdn.dishbystep.com/viral-dubai-chocolate/01-cover.jpg" alt="Viral Dubai Chocolate" loading="lazy">
+<div class="card-body"><h3>Viral Dubai Chocolate</h3><div class="card-meta">United Arab Emirates &middot; Serves 8</div></div>
+</a>
+<a class="card" href="recipes/vietnamese-spring-rolls/" data-title="Vietnamese Fresh Spring Rolls" data-country="Vietnam">
+<img src="https://cdn.dishbystep.com/vietnamese-spring-rolls/01-cover.jpg" alt="Vietnamese Fresh Spring Rolls" loading="lazy">
+<div class="card-body"><h3>Vietnamese Fresh Spring Rolls</h3><div class="card-meta">Vietnam &middot; Serves 4 (makes 12 rolls)</div></div>
+</a>
+<a class="card" href="recipes/vietnamese-banh-xeo/" data-title="Vietnamese Banh Xeo" data-country="Vietnam">
+<img src="https://cdn.dishbystep.com/vietnamese-banh-xeo/01-cover.jpg" alt="Vietnamese Banh Xeo" loading="lazy">
+<div class="card-body"><h3>Vietnamese Banh Xeo</h3><div class="card-meta">Vietnam &middot; Serves Serves 4 (makes 8 crepes)</div></div>
+</a>
+<a class="card" href="recipes/ultimate-grilled-cheese-tomato-soup/" data-title="Ultimate Grilled Cheese and Tomato Soup" data-country="United States">
+<img src="https://cdn.dishbystep.com/ultimate-grilled-cheese-tomato-soup/01-cover.jpg" alt="Ultimate Grilled Cheese and Tomato Soup" loading="lazy">
+<div class="card-body"><h3>Ultimate Grilled Cheese and Tomato Soup</h3><div class="card-meta">United States &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/turkish-pide/" data-title="Turkish Pide" data-country="Turkey">
+<img src="https://cdn.dishbystep.com/turkish-pide/01-cover.jpg" alt="Turkish Pide" loading="lazy">
+<div class="card-body"><h3>Turkish Pide</h3><div class="card-meta">Turkey &middot; Serves 4 (4 boats)</div></div>
+</a>
+<a class="card" href="recipes/turkish-lahmacun/" data-title="Turkish Lahmacun" data-country="Turkey">
+<img src="https://cdn.dishbystep.com/turkish-lahmacun/01-cover.jpg" alt="Turkish Lahmacun" loading="lazy">
+<div class="card-body"><h3>Turkish Lahmacun</h3><div class="card-meta">Turkey &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/tres-leches-cake/" data-title="Tres Leches Cake" data-country="Mexico">
+<img src="https://cdn.dishbystep.com/tres-leches-cake/01-cover.jpg" alt="Tres Leches Cake" loading="lazy">
+<div class="card-body"><h3>Tres Leches Cake</h3><div class="card-meta">Mexico &middot; Serves 12</div></div>
+</a>
+<a class="card" href="recipes/thai-som-tum/" data-title="Thai Som Tum" data-country="Thailand">
+<img src="https://cdn.dishbystep.com/thai-som-tum/01-cover.jpg" alt="Thai Som Tum" loading="lazy">
+<div class="card-body"><h3>Thai Som Tum</h3><div class="card-meta">Thailand &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/thai-pineapple-fried-rice/" data-title="Thai Pineapple Fried Rice" data-country="Thailand">
+<img src="https://cdn.dishbystep.com/thai-pineapple-fried-rice/01-cover.jpg" alt="Thai Pineapple Fried Rice" loading="lazy">
+<div class="card-body"><h3>Thai Pineapple Fried Rice</h3><div class="card-meta">Thailand &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/thai-pad-see-ew/" data-title="Thai Pad See Ew" data-country="Thailand">
+<img src="https://cdn.dishbystep.com/thai-pad-see-ew/01-cover.jpg" alt="Thai Pad See Ew" loading="lazy">
+<div class="card-body"><h3>Thai Pad See Ew</h3><div class="card-meta">Thailand &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/thai-massaman-curry/" data-title="Thai Massaman Curry" data-country="Thailand">
+<img src="https://cdn.dishbystep.com/thai-massaman-curry/01-cover.jpg" alt="Thai Massaman Curry" loading="lazy">
+<div class="card-body"><h3>Thai Massaman Curry</h3><div class="card-meta">Thailand &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/thai-drunken-noodles/" data-title="Thai Drunken Noodles" data-country="Thailand">
+<img src="https://cdn.dishbystep.com/thai-drunken-noodles/01-cover.jpg" alt="Thai Drunken Noodles" loading="lazy">
+<div class="card-body"><h3>Thai Drunken Noodles</h3><div class="card-meta">Thailand &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/thai-chicken-satay-skewers/" data-title="Thai Chicken Satay Skewers" data-country="Thailand">
+<img src="https://cdn.dishbystep.com/thai-chicken-satay-skewers/01-cover.jpg" alt="Thai Chicken Satay Skewers" loading="lazy">
+<div class="card-body"><h3>Thai Chicken Satay Skewers</h3><div class="card-meta">Thailand &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/chinese-sweet-and-sour-pork/" data-title="Sweet and Sour Pork" data-country="China">
+<img src="https://cdn.dishbystep.com/chinese-sweet-and-sour-pork/01-cover.jpg" alt="Sweet and Sour Pork" loading="lazy">
+<div class="card-body"><h3>Sweet and Sour Pork</h3><div class="card-meta">China &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/spanish-patatas-bravas/" data-title="Spanish Patatas Bravas" data-country="Spain">
+<img src="https://cdn.dishbystep.com/spanish-patatas-bravas/01-cover.jpg" alt="Spanish Patatas Bravas" loading="lazy">
+<div class="card-body"><h3>Spanish Patatas Bravas</h3><div class="card-meta">Spain &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/spaghetti-and-meatballs/" data-title="Spaghetti and Meatballs" data-country="Italy">
+<img src="https://cdn.dishbystep.com/spaghetti-and-meatballs/01-cover.jpg" alt="Spaghetti and Meatballs" loading="lazy">
+<div class="card-body"><h3>Spaghetti and Meatballs</h3><div class="card-meta">Italy &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/spanish-gambas-al-ajillo/" data-title="Sizzling Spanish Gambas al Ajillo" data-country="Spain">
+<img src="https://cdn.dishbystep.com/spanish-gambas-al-ajillo/01-cover.jpg" alt="Sizzling Spanish Gambas al Ajillo" loading="lazy">
+<div class="card-body"><h3>Sizzling Spanish Gambas al Ajillo</h3><div class="card-meta">Spain</div></div>
+</a>
+<a class="card" href="recipes/singaporean-chilli-crab/" data-title="Singapore Chilli Crab" data-country="Singapore">
+<img src="https://cdn.dishbystep.com/singaporean-chilli-crab/01-cover.jpg" alt="Singapore Chilli Crab" loading="lazy">
+<div class="card-body"><h3>Singapore Chilli Crab</h3><div class="card-meta">Singapore &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/italian-panna-cotta/" data-title="Silky Vanilla Panna Cotta" data-country="Italy">
+<img src="https://cdn.dishbystep.com/italian-panna-cotta/01-cover.jpg" alt="Silky Vanilla Panna Cotta" loading="lazy">
+<div class="card-body"><h3>Silky Vanilla Panna Cotta</h3><div class="card-meta">Italy &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/sichuan-mapo-tofu/" data-title="Sichuan Mapo Tofu" data-country="China">
+<img src="https://cdn.dishbystep.com/sichuan-mapo-tofu/01-cover.jpg" alt="Sichuan Mapo Tofu" loading="lazy">
+<div class="card-body"><h3>Sichuan Mapo Tofu</h3><div class="card-meta">China &middot; Serves 6</div></div>
+</a>
+<a class="card" href="recipes/salvadoran-pupusas/" data-title="Salvadoran Pupusas" data-country="El Salvador">
+<img src="https://cdn.dishbystep.com/salvadoran-pupusas/01-cover.jpg" alt="Salvadoran Pupusas" loading="lazy">
+<div class="card-body"><h3>Salvadoran Pupusas</h3><div class="card-meta">El Salvador &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/austrian-sachertorte/" data-title="Sachertorte" data-country="Austria">
+<img src="https://cdn.dishbystep.com/austrian-sachertorte/01-cover.jpg" alt="Sachertorte" loading="lazy">
+<div class="card-body"><h3>Sachertorte</h3><div class="card-meta">Austria &middot; Serves 12</div></div>
+</a>
+<a class="card" href="recipes/russian-honey-cake/" data-title="Russian Honey Cake" data-country="Russia">
+<img src="https://cdn.dishbystep.com/russian-honey-cake/01-cover.jpg" alt="Russian Honey Cake" loading="lazy">
+<div class="card-body"><h3>Russian Honey Cake</h3><div class="card-meta">Russia &middot; Serves 12</div></div>
+</a>
+<a class="card" href="recipes/risotto-alla-milanese/" data-title="Risotto alla Milanese" data-country="Italy">
+<img src="https://cdn.dishbystep.com/risotto-alla-milanese/01-cover.jpg" alt="Risotto alla Milanese" loading="lazy">
+<div class="card-body"><h3>Risotto alla Milanese</h3><div class="card-meta">Italy &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/red-velvet-cake/" data-title="Red Velvet Cake" data-country="United States">
+<img src="https://cdn.dishbystep.com/red-velvet-cake/01-cover.jpg" alt="Red Velvet Cake" loading="lazy">
+<div class="card-body"><h3>Red Velvet Cake</h3><div class="card-meta">United States &middot; Serves 12</div></div>
+</a>
+<a class="card" href="recipes/mexican-pork-tamales/" data-title="Pork Tamales" data-country="Mexico">
+<img src="https://cdn.dishbystep.com/mexican-pork-tamales/01-cover.jpg" alt="Pork Tamales" loading="lazy">
+<div class="card-body"><h3>Pork Tamales</h3><div class="card-meta">Mexico &middot; Serves 6 (makes about 12 tamales)</div></div>
+</a>
+<a class="card" href="recipes/indian-palak-paneer/" data-title="Palak Paneer" data-country="India">
+<img src="https://cdn.dishbystep.com/indian-palak-paneer/01-cover.jpg" alt="Palak Paneer" loading="lazy">
+<div class="card-body"><h3>Palak Paneer</h3><div class="card-meta">India &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/new-england-clam-chowder/" data-title="New England Clam Chowder" data-country="United States">
+<img src="https://cdn.dishbystep.com/new-england-clam-chowder/01-cover.jpg" alt="New England Clam Chowder" loading="lazy">
+<div class="card-body"><h3>New England Clam Chowder</h3><div class="card-meta">United States &middot; Serves 6</div></div>
+</a>
+<a class="card" href="recipes/nepalese-chicken-momos/" data-title="Nepalese Chicken Momos" data-country="Nepal">
+<img src="https://cdn.dishbystep.com/nepalese-chicken-momos/01-cover.jpg" alt="Nepalese Chicken Momos" loading="lazy">
+<div class="card-body"><h3>Nepalese Chicken Momos</h3><div class="card-meta">Nepal &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/mexican-street-corn/" data-title="Mexican Street Corn" data-country="Mexico">
+<img src="https://cdn.dishbystep.com/mexican-street-corn/01-cover.jpg" alt="Mexican Street Corn" loading="lazy">
+<div class="card-body"><h3>Mexican Street Corn</h3><div class="card-meta">Mexico &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/mexican-pozole-rojo/" data-title="Mexican Pozole Rojo" data-country="Mexico">
+<img src="https://cdn.dishbystep.com/mexican-pozole-rojo/01-cover.jpg" alt="Mexican Pozole Rojo" loading="lazy">
+<div class="card-body"><h3>Mexican Pozole Rojo</h3><div class="card-meta">Mexico &middot; Serves 8</div></div>
+</a>
+<a class="card" href="recipes/marry-me-chicken/" data-title="Marry Me Chicken" data-country="United States">
+<img src="https://cdn.dishbystep.com/marry-me-chicken/01-cover.jpg" alt="Marry Me Chicken" loading="lazy">
+<div class="card-body"><h3>Marry Me Chicken</h3><div class="card-meta">United States &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/malaysian-laksa/" data-title="Malaysian Chicken Laksa" data-country="Malaysia">
+<img src="https://cdn.dishbystep.com/malaysian-laksa/01-cover.jpg" alt="Malaysian Chicken Laksa" loading="lazy">
+<div class="card-body"><h3>Malaysian Chicken Laksa</h3><div class="card-meta">Malaysia &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/korean-kimchi-fried-rice/" data-title="Korean Kimchi Fried Rice" data-country="South Korea">
+<img src="https://cdn.dishbystep.com/korean-kimchi-fried-rice/01-cover.jpg" alt="Korean Kimchi Fried Rice" loading="lazy">
+<div class="card-body"><h3>Korean Kimchi Fried Rice</h3><div class="card-meta">South Korea &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/korean-japchae/" data-title="Korean Japchae" data-country="South Korea">
+<img src="https://cdn.dishbystep.com/korean-japchae/01-cover.jpg" alt="Korean Japchae" loading="lazy">
+<div class="card-body"><h3>Korean Japchae</h3><div class="card-meta">South Korea &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/korean-cream-cheese-garlic-bread/" data-title="Korean Cream Cheese Garlic Bread" data-country="South Korea">
+<img src="https://cdn.dishbystep.com/korean-cream-cheese-garlic-bread/01-cover.jpg" alt="Korean Cream Cheese Garlic Bread" loading="lazy">
+<div class="card-body"><h3>Korean Cream Cheese Garlic Bread</h3><div class="card-meta">South Korea</div></div>
+</a>
+<a class="card" href="recipes/korean-corn-dogs/" data-title="Korean Corn Dogs" data-country="South Korea">
+<img src="https://cdn.dishbystep.com/korean-corn-dogs/01-cover.jpg" alt="Korean Corn Dogs" loading="lazy">
+<div class="card-body"><h3>Korean Corn Dogs</h3><div class="card-meta">South Korea &middot; Serves 6</div></div>
+</a>
+<a class="card" href="recipes/key-lime-pie/" data-title="Key Lime Pie" data-country="United States">
+<img src="https://cdn.dishbystep.com/key-lime-pie/01-cover.jpg" alt="Key Lime Pie" loading="lazy">
+<div class="card-body"><h3>Key Lime Pie</h3><div class="card-meta">United States &middot; Serves 8</div></div>
+</a>
+<a class="card" href="recipes/japanese-jiggly-cheesecake/" data-title="Jiggly Japanese Cheesecake" data-country="Japan">
+<img src="https://cdn.dishbystep.com/japanese-jiggly-cheesecake/01-cover.jpg" alt="Jiggly Japanese Cheesecake" loading="lazy">
+<div class="card-body"><h3>Jiggly Japanese Cheesecake</h3><div class="card-meta">Japan &middot; Serves 12</div></div>
+</a>
+<a class="card" href="recipes/japanese-tuna-mayo-onigiri/" data-title="Japanese Tuna-Mayo Onigiri" data-country="Japan">
+<img src="https://cdn.dishbystep.com/japanese-tuna-mayo-onigiri/01-cover.jpg" alt="Japanese Tuna-Mayo Onigiri" loading="lazy">
+<div class="card-body"><h3>Japanese Tuna-Mayo Onigiri</h3><div class="card-meta">Japan &middot; Serves 6</div></div>
+</a>
+<a class="card" href="recipes/japanese-takoyaki/" data-title="Japanese Takoyaki" data-country="Japan">
+<img src="https://cdn.dishbystep.com/japanese-takoyaki/01-cover.jpg" alt="Japanese Takoyaki" loading="lazy">
+<div class="card-body"><h3>Japanese Takoyaki</h3><div class="card-meta">Japan &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/japanese-shrimp-tempura/" data-title="Japanese Shrimp Tempura" data-country="Japan">
+<img src="https://cdn.dishbystep.com/japanese-shrimp-tempura/01-cover.jpg" alt="Japanese Shrimp Tempura" loading="lazy">
+<div class="card-body"><h3>Japanese Shrimp Tempura</h3><div class="card-meta">Japan &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/japanese-pork-gyoza/" data-title="Japanese Pork Gyoza" data-country="Japan">
+<img src="https://cdn.dishbystep.com/japanese-pork-gyoza/01-cover.jpg" alt="Japanese Pork Gyoza" loading="lazy">
+<div class="card-body"><h3>Japanese Pork Gyoza</h3><div class="card-meta">Japan &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/japanese-chicken-teriyaki/" data-title="Japanese Chicken Teriyaki" data-country="Japan">
+<img src="https://cdn.dishbystep.com/japanese-chicken-teriyaki/01-cover.jpg" alt="Japanese Chicken Teriyaki" loading="lazy">
+<div class="card-body"><h3>Japanese Chicken Teriyaki</h3><div class="card-meta">Japan &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/japanese-chicken-karaage/" data-title="Japanese Chicken Karaage" data-country="Japan">
+<img src="https://cdn.dishbystep.com/japanese-chicken-karaage/01-cover.jpg" alt="Japanese Chicken Karaage" loading="lazy">
+<div class="card-body"><h3>Japanese Chicken Karaage</h3><div class="card-meta">Japan &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/japanese-beef-udon/" data-title="Japanese Beef Udon Noodle Soup" data-country="Japan">
+<img src="https://cdn.dishbystep.com/japanese-beef-udon/01-cover.jpg" alt="Japanese Beef Udon Noodle Soup" loading="lazy">
+<div class="card-body"><h3>Japanese Beef Udon Noodle Soup</h3><div class="card-meta">Japan &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/jamaican-beef-patties/" data-title="Jamaican Beef Patties" data-country="Jamaica">
+<img src="https://cdn.dishbystep.com/jamaican-beef-patties/01-cover.jpg" alt="Jamaican Beef Patties" loading="lazy">
+<div class="card-body"><h3>Jamaican Beef Patties</h3><div class="card-meta">Jamaica &middot; Serves 8</div></div>
+</a>
+<a class="card" href="recipes/italian-focaccia/" data-title="Italian Garden Focaccia" data-country="Italy">
+<img src="https://cdn.dishbystep.com/italian-focaccia/01-cover.jpg" alt="Italian Garden Focaccia" loading="lazy">
+<div class="card-body"><h3>Italian Garden Focaccia</h3><div class="card-meta">Italy &middot; Serves 8</div></div>
+</a>
+<a class="card" href="recipes/irish-beef-stew/" data-title="Irish Beef Stew" data-country="Ireland">
+<img src="https://cdn.dishbystep.com/irish-beef-stew/01-cover.jpg" alt="Irish Beef Stew" loading="lazy">
+<div class="card-body"><h3>Irish Beef Stew</h3><div class="card-meta">Ireland &middot; Serves 6</div></div>
+</a>
+<a class="card" href="recipes/indian-rasmalai/" data-title="Indian Rasmalai" data-country="India">
+<img src="https://cdn.dishbystep.com/indian-rasmalai/01-cover.jpg" alt="Indian Rasmalai" loading="lazy">
+<div class="card-body"><h3>Indian Rasmalai</h3><div class="card-meta">India &middot; Serves 6</div></div>
+</a>
+<a class="card" href="recipes/indian-mango-kulfi/" data-title="Indian Mango Kulfi" data-country="India">
+<img src="https://cdn.dishbystep.com/indian-mango-kulfi/01-cover.jpg" alt="Indian Mango Kulfi" loading="lazy">
+<div class="card-body"><h3>Indian Mango Kulfi</h3><div class="card-meta">India &middot; Serves 6</div></div>
+</a>
+<a class="card" href="recipes/indian-gulab-jamun/" data-title="Indian Gulab Jamun" data-country="India">
+<img src="https://cdn.dishbystep.com/indian-gulab-jamun/01-cover.jpg" alt="Indian Gulab Jamun" loading="lazy">
+<div class="card-body"><h3>Indian Gulab Jamun</h3><div class="card-meta">India &middot; Serves 6</div></div>
+</a>
+<a class="card" href="recipes/indian-garlic-naan/" data-title="Indian Garlic Naan" data-country="India">
+<img src="https://cdn.dishbystep.com/indian-garlic-naan/01-cover.jpg" alt="Indian Garlic Naan" loading="lazy">
+<div class="card-body"><h3>Indian Garlic Naan</h3><div class="card-meta">India &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/indian-chicken-tikka-masala/" data-title="Indian Chicken Tikka Masala" data-country="India">
+<img src="https://cdn.dishbystep.com/indian-chicken-tikka-masala/01-cover.jpg" alt="Indian Chicken Tikka Masala" loading="lazy">
+<div class="card-body"><h3>Indian Chicken Tikka Masala</h3><div class="card-meta">India &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/hawaiian-poke-bowl/" data-title="Hawaiian Poke Bowl" data-country="Hawaii">
+<img src="https://cdn.dishbystep.com/hawaiian-poke-bowl/01-cover.jpg" alt="Hawaiian Poke Bowl" loading="lazy">
+<div class="card-body"><h3>Hawaiian Poke Bowl</h3><div class="card-meta">Hawaii &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/filipino-halo-halo/" data-title="Halo-Halo" data-country="Philippines">
+<img src="https://cdn.dishbystep.com/filipino-halo-halo/01-cover.jpg" alt="Halo-Halo" loading="lazy">
+<div class="card-body"><h3>Halo-Halo</h3><div class="card-meta">Philippines &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/greek-spanakopita/" data-title="Greek Spanakopita" data-country="Greece">
+<img src="https://cdn.dishbystep.com/greek-spanakopita/01-cover.jpg" alt="Greek Spanakopita" loading="lazy">
+<div class="card-body"><h3>Greek Spanakopita</h3><div class="card-meta">Greece &middot; Serves 8</div></div>
+</a>
+<a class="card" href="recipes/greek-saganaki/" data-title="Greek Saganaki" data-country="Greece">
+<img src="https://cdn.dishbystep.com/greek-saganaki/01-cover.jpg" alt="Greek Saganaki" loading="lazy">
+<div class="card-body"><h3>Greek Saganaki</h3><div class="card-meta">Greece &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/greek-pastitsio/" data-title="Greek Pastitsio" data-country="Greece">
+<img src="https://cdn.dishbystep.com/greek-pastitsio/01-cover.jpg" alt="Greek Pastitsio" loading="lazy">
+<div class="card-body"><h3>Greek Pastitsio</h3><div class="card-meta">Greece &middot; Serves 8</div></div>
+</a>
+<a class="card" href="recipes/german-apple-strudel/" data-title="German Apple Strudel" data-country="Germany">
+<img src="https://cdn.dishbystep.com/german-apple-strudel/01-cover.jpg" alt="German Apple Strudel" loading="lazy">
+<div class="card-body"><h3>German Apple Strudel</h3><div class="card-meta">Germany &middot; Serves 8</div></div>
+</a>
+<a class="card" href="recipes/general-tsos-chicken/" data-title="General Tso&#x27;s Chicken" data-country="China">
+<img src="https://cdn.dishbystep.com/general-tsos-chicken/01-cover.jpg" alt="General Tso&#x27;s Chicken" loading="lazy">
+<div class="card-body"><h3>General Tso&#x27;s Chicken</h3><div class="card-meta">China &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/garlic-butter-steak-bites/" data-title="Garlic Butter Steak Bites" data-country="United States">
+<img src="https://cdn.dishbystep.com/garlic-butter-steak-bites/01-cover.jpg" alt="Garlic Butter Steak Bites" loading="lazy">
+<div class="card-body"><h3>Garlic Butter Steak Bites</h3><div class="card-meta">United States &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/garlic-butter-shrimp-pasta/" data-title="Garlic Butter Shrimp Pasta" data-country="Italy">
+<img src="https://cdn.dishbystep.com/garlic-butter-shrimp-pasta/01-cover.jpg" alt="Garlic Butter Shrimp Pasta" loading="lazy">
+<div class="card-body"><h3>Garlic Butter Shrimp Pasta</h3><div class="card-meta">Italy &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/french-madeleines/" data-title="French Madeleines" data-country="France">
+<img src="https://cdn.dishbystep.com/french-madeleines/01-cover.jpg" alt="French Madeleines" loading="lazy">
+<div class="card-body"><h3>French Madeleines</h3><div class="card-meta">France &middot; Serves 6</div></div>
+</a>
+<a class="card" href="recipes/french-chocolate-eclairs/" data-title="French Chocolate Éclairs" data-country="France">
+<img src="https://cdn.dishbystep.com/french-chocolate-eclairs/01-cover.jpg" alt="French Chocolate Éclairs" loading="lazy">
+<div class="card-body"><h3>French Chocolate Éclairs</h3><div class="card-meta">France &middot; Serves makes 12 éclairs</div></div>
+</a>
+<a class="card" href="recipes/french-chocolate-souffle/" data-title="French Chocolate Soufflé" data-country="France">
+<img src="https://cdn.dishbystep.com/french-chocolate-souffle/01-cover.jpg" alt="French Chocolate Soufflé" loading="lazy">
+<div class="card-body"><h3>French Chocolate Soufflé</h3><div class="card-meta">France &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/french-bouillabaisse/" data-title="French Bouillabaisse" data-country="France">
+<img src="https://cdn.dishbystep.com/french-bouillabaisse/01-cover.jpg" alt="French Bouillabaisse" loading="lazy">
+<div class="card-body"><h3>French Bouillabaisse</h3><div class="card-meta">France &middot; Serves 6</div></div>
+</a>
+<a class="card" href="recipes/chinese-scallion-pancakes/" data-title="Flaky Crispy Scallion Pancakes" data-country="China">
+<img src="https://cdn.dishbystep.com/chinese-scallion-pancakes/01-cover.jpg" alt="Flaky Crispy Scallion Pancakes" loading="lazy">
+<div class="card-body"><h3>Flaky Crispy Scallion Pancakes</h3><div class="card-meta">China &middot; Serves 4 (makes 4 large pancakes)</div></div>
+</a>
+<a class="card" href="recipes/eton-mess/" data-title="Eton Mess" data-country="United Kingdom">
+<img src="https://cdn.dishbystep.com/eton-mess/01-cover.jpg" alt="Eton Mess" loading="lazy">
+<div class="card-body"><h3>Eton Mess</h3><div class="card-meta">United Kingdom &middot; Serves 6</div></div>
+</a>
+<a class="card" href="recipes/ethiopian-doro-wat/" data-title="Ethiopian Doro Wat" data-country="Ethiopia">
+<img src="https://cdn.dishbystep.com/ethiopian-doro-wat/01.jpg" alt="Ethiopian Doro Wat" loading="lazy">
+<div class="card-body"><h3>Ethiopian Doro Wat</h3><div class="card-meta">Ethiopia &middot; Serves 6</div></div>
+</a>
+<a class="card" href="recipes/italian-eggplant-parmigiana/" data-title="Eggplant Parmigiana" data-country="Italy">
+<img src="https://cdn.dishbystep.com/italian-eggplant-parmigiana/01-cover.jpg" alt="Eggplant Parmigiana" loading="lazy">
+<div class="card-body"><h3>Eggplant Parmigiana</h3><div class="card-meta">Italy &middot; Serves 6</div></div>
+</a>
+<a class="card" href="recipes/australian-lamingtons/" data-title="Easy Australian Lamingtons" data-country="Australia">
+<img src="https://cdn.dishbystep.com/australian-lamingtons/01-cover.jpg" alt="Easy Australian Lamingtons" loading="lazy">
+<div class="card-body"><h3>Easy Australian Lamingtons</h3><div class="card-meta">Australia &middot; Serves 16</div></div>
+</a>
+<a class="card" href="recipes/cuban-ropa-vieja/" data-title="Cuban Ropa Vieja" data-country="Cuba">
+<img src="https://cdn.dishbystep.com/cuban-ropa-vieja/01-cover.jpg" alt="Cuban Ropa Vieja" loading="lazy">
+<div class="card-body"><h3>Cuban Ropa Vieja</h3><div class="card-meta">Cuba &middot; Serves 6</div></div>
+</a>
+<a class="card" href="recipes/french-croque-monsieur/" data-title="Croque-Monsieur" data-country="France">
+<img src="https://cdn.dishbystep.com/french-croque-monsieur/01-cover.jpg" alt="Croque-Monsieur" loading="lazy">
+<div class="card-body"><h3>Croque-Monsieur</h3><div class="card-meta">France &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/crispy-pork-carnitas-tacos/" data-title="Crispy Pork Carnitas Tacos" data-country="Mexico">
+<img src="https://cdn.dishbystep.com/crispy-pork-carnitas-tacos/01-cover.jpg" alt="Crispy Pork Carnitas Tacos" loading="lazy">
+<div class="card-body"><h3>Crispy Pork Carnitas Tacos</h3><div class="card-meta">Mexico &middot; Serves 6</div></div>
+</a>
+<a class="card" href="recipes/indian-samosas/" data-title="Crispy Indian Samosas" data-country="India">
+<img src="https://cdn.dishbystep.com/indian-samosas/01-cover.jpg" alt="Crispy Indian Samosas" loading="lazy">
+<div class="card-body"><h3>Crispy Indian Samosas</h3><div class="card-meta">India &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/japanese-tonkatsu/" data-title="Crispy Golden Tonkatsu" data-country="Japan">
+<img src="https://cdn.dishbystep.com/japanese-tonkatsu/01-cover.jpg" alt="Crispy Golden Tonkatsu" loading="lazy">
+<div class="card-body"><h3>Crispy Golden Tonkatsu</h3><div class="card-meta">Japan &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/italian-arancini/" data-title="Crispy Golden Arancini" data-country="Italy">
+<img src="https://cdn.dishbystep.com/italian-arancini/01-cover.jpg" alt="Crispy Golden Arancini" loading="lazy">
+<div class="card-body"><h3>Crispy Golden Arancini</h3><div class="card-meta">Italy &middot; Serves 6</div></div>
+</a>
+<a class="card" href="recipes/filipino-lumpia/" data-title="Crispy Filipino Lumpia" data-country="Philippines">
+<img src="https://cdn.dishbystep.com/filipino-lumpia/01-cover.jpg" alt="Crispy Filipino Lumpia" loading="lazy">
+<div class="card-body"><h3>Crispy Filipino Lumpia</h3><div class="card-meta">Philippines</div></div>
+</a>
+<a class="card" href="recipes/creamy-tuscan-chicken/" data-title="Creamy Tuscan Chicken" data-country="Italy">
+<img src="https://cdn.dishbystep.com/creamy-tuscan-chicken/01-cover.jpg" alt="Creamy Tuscan Chicken" loading="lazy">
+<div class="card-body"><h3>Creamy Tuscan Chicken</h3><div class="card-meta">Italy &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/thai-tom-kha-gai/" data-title="Creamy Thai Tom Kha Gai" data-country="Thailand">
+<img src="https://cdn.dishbystep.com/thai-tom-kha-gai/01-cover.jpg" alt="Creamy Thai Tom Kha Gai" loading="lazy">
+<div class="card-body"><h3>Creamy Thai Tom Kha Gai</h3><div class="card-meta">Thailand &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/creamy-cajun-chicken-pasta/" data-title="Creamy Cajun Chicken Pasta" data-country="United States">
+<img src="https://cdn.dishbystep.com/creamy-cajun-chicken-pasta/01-cover.jpg" alt="Creamy Cajun Chicken Pasta" loading="lazy">
+<div class="card-body"><h3>Creamy Cajun Chicken Pasta</h3><div class="card-meta">United States &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/brazilian-moqueca/" data-title="Creamy Brazilian Moqueca" data-country="Brazil">
+<img src="https://cdn.dishbystep.com/brazilian-moqueca/01-cover.jpg" alt="Creamy Brazilian Moqueca" loading="lazy">
+<div class="card-body"><h3>Creamy Brazilian Moqueca</h3><div class="card-meta">Brazil &middot; Serves 6</div></div>
+</a>
+<a class="card" href="recipes/colombian-cheese-arepas/" data-title="Colombian Cheese Arepas" data-country="Colombia">
+<img src="https://cdn.dishbystep.com/colombian-cheese-arepas/01-cover.jpg" alt="Colombian Cheese Arepas" loading="lazy">
+<div class="card-body"><h3>Colombian Cheese Arepas</h3><div class="card-meta">Colombia &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/classic-victoria-sponge-cake/" data-title="Classic Victoria Sponge Cake" data-country="United Kingdom">
+<img src="https://cdn.dishbystep.com/classic-victoria-sponge-cake/01-cover.jpg" alt="Classic Victoria Sponge Cake" loading="lazy">
+<div class="card-body"><h3>Classic Victoria Sponge Cake</h3><div class="card-meta">United Kingdom &middot; Serves 8</div></div>
+</a>
+<a class="card" href="recipes/classic-tomato-bruschetta/" data-title="Classic Tomato Bruschetta" data-country="Italy">
+<img src="https://cdn.dishbystep.com/classic-tomato-bruschetta/01-cover.jpg" alt="Classic Tomato Bruschetta" loading="lazy">
+<div class="card-body"><h3>Classic Tomato Bruschetta</h3><div class="card-meta">Italy &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/classic-strawberry-shortcake/" data-title="Classic Strawberry Shortcake" data-country="United States">
+<img src="https://cdn.dishbystep.com/classic-strawberry-shortcake/01-cover.jpg" alt="Classic Strawberry Shortcake" loading="lazy">
+<div class="card-body"><h3>Classic Strawberry Shortcake</h3><div class="card-meta">United States &middot; Serves 8</div></div>
+</a>
+<a class="card" href="recipes/classic-sticky-toffee-pudding/" data-title="Classic Sticky Toffee Pudding" data-country="United Kingdom">
+<img src="https://cdn.dishbystep.com/classic-sticky-toffee-pudding/01-cover.jpg" alt="Classic Sticky Toffee Pudding" loading="lazy">
+<div class="card-body"><h3>Classic Sticky Toffee Pudding</h3><div class="card-meta">United Kingdom &middot; Serves 8</div></div>
+</a>
+<a class="card" href="recipes/classic-smores-bars/" data-title="Classic S&#x27;mores Bars" data-country="United States">
+<img src="https://cdn.dishbystep.com/classic-smores-bars/01-cover.jpg" alt="Classic S&#x27;mores Bars" loading="lazy">
+<div class="card-body"><h3>Classic S&#x27;mores Bars</h3><div class="card-meta">United States &middot; Serves 16</div></div>
+</a>
+<a class="card" href="recipes/classic-red-velvet-cake/" data-title="Classic Red Velvet Cake" data-country="United States">
+<img src="https://cdn.dishbystep.com/classic-red-velvet-cake/01-cover.jpg" alt="Classic Red Velvet Cake" loading="lazy">
+<div class="card-body"><h3>Classic Red Velvet Cake</h3><div class="card-meta">United States &middot; Serves 12</div></div>
+</a>
+<a class="card" href="recipes/classic-pumpkin-pie/" data-title="Classic Pumpkin Pie" data-country="United States">
+<img src="https://cdn.dishbystep.com/classic-pumpkin-pie/01-cover.jpg" alt="Classic Pumpkin Pie" loading="lazy">
+<div class="card-body"><h3>Classic Pumpkin Pie</h3><div class="card-meta">United States &middot; Serves 8 (one 9-inch pie)</div></div>
+</a>
+<a class="card" href="recipes/puerto-rican-mofongo/" data-title="Classic Puerto Rican Mofongo" data-country="Puerto Rico">
+<img src="https://cdn.dishbystep.com/puerto-rican-mofongo/01-cover.jpg" alt="Classic Puerto Rican Mofongo" loading="lazy">
+<div class="card-body"><h3>Classic Puerto Rican Mofongo</h3><div class="card-meta">Puerto Rico &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/classic-potato-gnocchi/" data-title="Classic Potato Gnocchi" data-country="Italy">
+<img src="https://cdn.dishbystep.com/classic-potato-gnocchi/01-cover.jpg" alt="Classic Potato Gnocchi" loading="lazy">
+<div class="card-body"><h3>Classic Potato Gnocchi</h3><div class="card-meta">Italy &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/pecan-pie/" data-title="Classic Pecan Pie" data-country="United States">
+<img src="https://cdn.dishbystep.com/pecan-pie/01-cover.jpg" alt="Classic Pecan Pie" loading="lazy">
+<div class="card-body"><h3>Classic Pecan Pie</h3><div class="card-meta">United States &middot; Serves 8</div></div>
+</a>
+<a class="card" href="recipes/classic-peach-cobbler/" data-title="Classic Peach Cobbler" data-country="United States">
+<img src="https://cdn.dishbystep.com/classic-peach-cobbler/01-cover.jpg" alt="Classic Peach Cobbler" loading="lazy">
+<div class="card-body"><h3>Classic Peach Cobbler</h3><div class="card-meta">United States &middot; Serves 8</div></div>
+</a>
+<a class="card" href="recipes/classic-pavlova/" data-title="Classic Pavlova" data-country="Australia">
+<img src="https://cdn.dishbystep.com/classic-pavlova/01-cover.jpg" alt="Classic Pavlova" loading="lazy">
+<div class="card-body"><h3>Classic Pavlova</h3><div class="card-meta">Australia &middot; Serves 12</div></div>
+</a>
+<a class="card" href="recipes/mexican-flan/" data-title="Classic Mexican Flan" data-country="Mexico">
+<img src="https://cdn.dishbystep.com/mexican-flan/01-cover.jpg" alt="Classic Mexican Flan" loading="lazy">
+<div class="card-body"><h3>Classic Mexican Flan</h3><div class="card-meta">Mexico &middot; Serves 8</div></div>
+</a>
+<a class="card" href="recipes/classic-lemon-bars/" data-title="Classic Lemon Bars" data-country="United States">
+<img src="https://cdn.dishbystep.com/classic-lemon-bars/01-cover.jpg" alt="Classic Lemon Bars" loading="lazy">
+<div class="card-body"><h3>Classic Lemon Bars</h3><div class="card-meta">United States &middot; Serves 16</div></div>
+</a>
+<a class="card" href="recipes/italian-calzone/" data-title="Classic Italian Calzone" data-country="Italy">
+<img src="https://cdn.dishbystep.com/italian-calzone/01-cover.jpg" alt="Classic Italian Calzone" loading="lazy">
+<div class="card-body"><h3>Classic Italian Calzone</h3><div class="card-meta">Italy &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/german-soft-pretzels/" data-title="Classic German Soft Pretzels" data-country="Germany">
+<img src="https://cdn.dishbystep.com/german-soft-pretzels/01-cover.jpg" alt="Classic German Soft Pretzels" loading="lazy">
+<div class="card-body"><h3>Classic German Soft Pretzels</h3><div class="card-meta">Germany &middot; Serves 8 pretzels</div></div>
+</a>
+<a class="card" href="recipes/classic-french-toast/" data-title="Classic French Toast" data-country="France">
+<img src="https://cdn.dishbystep.com/classic-french-toast/01-cover.jpg" alt="Classic French Toast" loading="lazy">
+<div class="card-body"><h3>Classic French Toast</h3><div class="card-meta">France &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/french-tarte-tatin/" data-title="Classic French Tarte Tatin" data-country="France">
+<img src="https://cdn.dishbystep.com/french-tarte-tatin/01-cover.jpg" alt="Classic French Tarte Tatin" loading="lazy">
+<div class="card-body"><h3>Classic French Tarte Tatin</h3><div class="card-meta">France &middot; Serves 6</div></div>
+</a>
+<a class="card" href="recipes/french-croissants/" data-title="Classic French Croissants" data-country="France">
+<img src="https://cdn.dishbystep.com/french-croissants/01-cover.jpg" alt="Classic French Croissants" loading="lazy">
+<div class="card-body"><h3>Classic French Croissants</h3><div class="card-meta">France &middot; Serves 12</div></div>
+</a>
+<a class="card" href="recipes/french-coq-au-vin/" data-title="Classic French Coq au Vin" data-country="France">
+<img src="https://cdn.dishbystep.com/french-coq-au-vin/01-cover.jpg" alt="Classic French Coq au Vin" loading="lazy">
+<div class="card-body"><h3>Classic French Coq au Vin</h3><div class="card-meta">France &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/lebanese-hummus/" data-title="Classic Creamy Hummus" data-country="Lebanon">
+<img src="https://cdn.dishbystep.com/lebanese-hummus/01-cover.jpg" alt="Classic Creamy Hummus" loading="lazy">
+<div class="card-body"><h3>Classic Creamy Hummus</h3><div class="card-meta">Lebanon &middot; Serves 8 as a dip (makes about 2 cups)</div></div>
+</a>
+<a class="card" href="recipes/classic-chocolate-mousse/" data-title="Classic Chocolate Mousse" data-country="France">
+<img src="https://cdn.dishbystep.com/classic-chocolate-mousse/01-cover.jpg" alt="Classic Chocolate Mousse" loading="lazy">
+<div class="card-body"><h3>Classic Chocolate Mousse</h3><div class="card-meta">France &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/classic-chocolate-cake/" data-title="Classic Chocolate Cake" data-country="United States">
+<img src="https://cdn.dishbystep.com/classic-chocolate-cake/01-cover.jpg" alt="Classic Chocolate Cake" loading="lazy">
+<div class="card-body"><h3>Classic Chocolate Cake</h3><div class="card-meta">United States &middot; Serves 8</div></div>
+</a>
+<a class="card" href="recipes/classic-chicken-tortilla-soup/" data-title="Classic Chicken Tortilla Soup" data-country="Mexico">
+<img src="https://cdn.dishbystep.com/classic-chicken-tortilla-soup/01-cover.jpg" alt="Classic Chicken Tortilla Soup" loading="lazy">
+<div class="card-body"><h3>Classic Chicken Tortilla Soup</h3><div class="card-meta">Mexico &middot; Serves 6</div></div>
+</a>
+<a class="card" href="recipes/classic-chicken-piccata/" data-title="Classic Chicken Piccata" data-country="Italy">
+<img src="https://cdn.dishbystep.com/classic-chicken-piccata/01-cover.jpg" alt="Classic Chicken Piccata" loading="lazy">
+<div class="card-body"><h3>Classic Chicken Piccata</h3><div class="card-meta">Italy &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/classic-chicken-fajitas/" data-title="Classic Chicken Fajitas" data-country="Mexico">
+<img src="https://cdn.dishbystep.com/classic-chicken-fajitas/01-cover.jpg" alt="Classic Chicken Fajitas" loading="lazy">
+<div class="card-body"><h3>Classic Chicken Fajitas</h3><div class="card-meta">Mexico &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/classic-cheeseburger/" data-title="Classic Cheeseburger" data-country="United States">
+<img src="https://cdn.dishbystep.com/classic-cheeseburger/01-cover.jpg" alt="Classic Cheeseburger" loading="lazy">
+<div class="card-body"><h3>Classic Cheeseburger</h3><div class="card-meta">United States &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/classic-buttermilk-fried-chicken/" data-title="Classic Buttermilk Fried Chicken" data-country="United States">
+<img src="https://cdn.dishbystep.com/classic-buttermilk-fried-chicken/01-cover.jpg" alt="Classic Buttermilk Fried Chicken" loading="lazy">
+<div class="card-body"><h3>Classic Buttermilk Fried Chicken</h3><div class="card-meta">United States &middot; Serves 6</div></div>
+</a>
+<a class="card" href="recipes/classic-british-scones/" data-title="Classic British Scones" data-country="United Kingdom">
+<img src="https://cdn.dishbystep.com/classic-british-scones/01-cover.jpg" alt="Classic British Scones" loading="lazy">
+<div class="card-body"><h3>Classic British Scones</h3><div class="card-meta">United Kingdom &middot; Serves Makes 8 scones</div></div>
+</a>
+<a class="card" href="recipes/british-banoffee-pie/" data-title="Classic British Banoffee Pie" data-country="United Kingdom">
+<img src="https://cdn.dishbystep.com/british-banoffee-pie/01-cover.jpg" alt="Classic British Banoffee Pie" loading="lazy">
+<div class="card-body"><h3>Classic British Banoffee Pie</h3><div class="card-meta">United Kingdom &middot; Serves 12</div></div>
+</a>
+<a class="card" href="recipes/classic-basil-pesto-pasta/" data-title="Classic Basil Pesto Pasta" data-country="Italy">
+<img src="https://cdn.dishbystep.com/classic-basil-pesto-pasta/01-cover.jpg" alt="Classic Basil Pesto Pasta" loading="lazy">
+<div class="card-body"><h3>Classic Basil Pesto Pasta</h3><div class="card-meta">Italy &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/classic-banana-pudding/" data-title="Classic Banana Pudding" data-country="United States">
+<img src="https://cdn.dishbystep.com/classic-banana-pudding/01-cover.jpg" alt="Classic Banana Pudding" loading="lazy">
+<div class="card-body"><h3>Classic Banana Pudding</h3><div class="card-meta">United States &middot; Serves 8</div></div>
+</a>
+<a class="card" href="recipes/classic-banana-bread/" data-title="Classic Banana Bread" data-country="United States">
+<img src="https://cdn.dishbystep.com/classic-banana-bread/01-cover.jpg" alt="Classic Banana Bread" loading="lazy">
+<div class="card-body"><h3>Classic Banana Bread</h3><div class="card-meta">United States &middot; Serves Serves 12</div></div>
+</a>
+<a class="card" href="recipes/classic-apple-crumble/" data-title="Classic Apple Crumble" data-country="United States">
+<img src="https://cdn.dishbystep.com/classic-apple-crumble/01-cover.jpg" alt="Classic Apple Crumble" loading="lazy">
+<div class="card-body"><h3>Classic Apple Crumble</h3><div class="card-meta">United States &middot; Serves 6</div></div>
+</a>
+<a class="card" href="recipes/classic-american-pancakes/" data-title="Classic American Pancakes" data-country="United States">
+<img src="https://cdn.dishbystep.com/classic-american-pancakes/01-cover.jpg" alt="Classic American Pancakes" loading="lazy">
+<div class="card-body"><h3>Classic American Pancakes</h3><div class="card-meta">United States &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/american-bbq-ribs/" data-title="Classic American BBQ Ribs" data-country="United States">
+<img src="https://cdn.dishbystep.com/american-bbq-ribs/01-cover.jpg" alt="Classic American BBQ Ribs" loading="lazy">
+<div class="card-body"><h3>Classic American BBQ Ribs</h3><div class="card-meta">United States &middot; Serves 6</div></div>
+</a>
+<a class="card" href="recipes/indian-chole-bhature/" data-title="Chole Bhature" data-country="India">
+<img src="https://cdn.dishbystep.com/indian-chole-bhature/01-cover.jpg" alt="Chole Bhature" loading="lazy">
+<div class="card-body"><h3>Chole Bhature</h3><div class="card-meta">India &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/mexican-chicken-quesadilla/" data-title="Chicken Quesadillas" data-country="Mexico">
+<img src="https://cdn.dishbystep.com/mexican-chicken-quesadilla/01-cover.jpg" alt="Chicken Quesadillas" loading="lazy">
+<div class="card-body"><h3>Chicken Quesadillas</h3><div class="card-meta">Mexico &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/chicken-biryani/" data-title="Chicken Biryani" data-country="India">
+<img src="https://cdn.dishbystep.com/chicken-biryani/01-cover.jpg" alt="Chicken Biryani" loading="lazy">
+<div class="card-body"><h3>Chicken Biryani</h3><div class="card-meta">India &middot; Serves 6</div></div>
+</a>
+<a class="card" href="recipes/cantonese-char-siu/" data-title="Cantonese Char Siu" data-country="China">
+<img src="https://cdn.dishbystep.com/cantonese-char-siu/01-cover.jpg" alt="Cantonese Char Siu" loading="lazy">
+<div class="card-body"><h3>Cantonese Char Siu</h3><div class="card-meta">China &middot; Serves 6</div></div>
+</a>
+<a class="card" href="recipes/brazilian-pao-de-queijo/" data-title="Brazilian Pão de Queijo" data-country="Brazil">
+<img src="https://cdn.dishbystep.com/brazilian-pao-de-queijo/01-cover.jpg" alt="Brazilian Pão de Queijo" loading="lazy">
+<div class="card-body"><h3>Brazilian Pão de Queijo</h3><div class="card-meta">Brazil &middot; Serves 30</div></div>
+</a>
+<a class="card" href="recipes/brazilian-brigadeiros/" data-title="Brazilian Brigadeiros" data-country="Brazil">
+<img src="https://cdn.dishbystep.com/brazilian-brigadeiros/01-cover.jpg" alt="Brazilian Brigadeiros" loading="lazy">
+<div class="card-body"><h3>Brazilian Brigadeiros</h3><div class="card-meta">Brazil &middot; Serves 20 truffles</div></div>
+</a>
+<a class="card" href="recipes/black-forest-cake/" data-title="Black Forest Cake" data-country="Germany">
+<img src="https://cdn.dishbystep.com/black-forest-cake/01-cover.jpg" alt="Black Forest Cake" loading="lazy">
+<div class="card-body"><h3>Black Forest Cake</h3><div class="card-meta">Germany &middot; Serves 12</div></div>
+</a>
+<a class="card" href="recipes/biscoff-cheesecake/" data-title="Biscoff Cheesecake" data-country="Belgium">
+<img src="https://cdn.dishbystep.com/biscoff-cheesecake/01-cover.jpg" alt="Biscoff Cheesecake" loading="lazy">
+<div class="card-body"><h3>Biscoff Cheesecake</h3><div class="card-meta">Belgium &middot; Serves 10</div></div>
+</a>
+<a class="card" href="recipes/better-than-takeout-orange-chicken/" data-title="Better-Than-Takeout Orange Chicken" data-country="China">
+<img src="https://cdn.dishbystep.com/better-than-takeout-orange-chicken/01-cover.jpg" alt="Better-Than-Takeout Orange Chicken" loading="lazy">
+<div class="card-body"><h3>Better-Than-Takeout Orange Chicken</h3><div class="card-meta">China &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/better-than-takeout-mongolian-beef/" data-title="Better-Than-Takeout Mongolian Beef" data-country="China">
+<img src="https://cdn.dishbystep.com/better-than-takeout-mongolian-beef/01-cover.jpg" alt="Better-Than-Takeout Mongolian Beef" loading="lazy">
+<div class="card-body"><h3>Better-Than-Takeout Mongolian Beef</h3><div class="card-meta">China &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/better-than-takeout-beef-broccoli/" data-title="Better Than Takeout Beef and Broccoli" data-country="China">
+<img src="https://cdn.dishbystep.com/better-than-takeout-beef-broccoli/01-cover.jpg" alt="Better Than Takeout Beef and Broccoli" loading="lazy">
+<div class="card-body"><h3>Better Than Takeout Beef and Broccoli</h3><div class="card-meta">China &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/indonesian-beef-rendang/" data-title="Beef Rendang" data-country="Indonesia">
+<img src="https://cdn.dishbystep.com/indonesian-beef-rendang/01-cover.jpg" alt="Beef Rendang" loading="lazy">
+<div class="card-body"><h3>Beef Rendang</h3><div class="card-meta">Indonesia &middot; Serves 6</div></div>
+</a>
+<a class="card" href="recipes/basque-burnt-cheesecake/" data-title="Basque Burnt Cheesecake" data-country="Spain">
+<img src="https://cdn.dishbystep.com/basque-burnt-cheesecake/01-cover.jpg" alt="Basque Burnt Cheesecake" loading="lazy">
+<div class="card-body"><h3>Basque Burnt Cheesecake</h3><div class="card-meta">Spain &middot; Serves 10</div></div>
+</a>
+<a class="card" href="recipes/baked-feta-pasta/" data-title="Baked Feta Pasta" data-country="Finland">
+<img src="https://cdn.dishbystep.com/baked-feta-pasta/01-cover.jpg" alt="Baked Feta Pasta" loading="lazy">
+<div class="card-body"><h3>Baked Feta Pasta</h3><div class="card-meta">Finland &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/argentine-chimichurri-steak/" data-title="Argentine Chimichurri Steak" data-country="Argentina">
+<img src="https://cdn.dishbystep.com/argentine-chimichurri-steak/01-cover.jpg" alt="Argentine Chimichurri Steak" loading="lazy">
+<div class="card-body"><h3>Argentine Chimichurri Steak</h3><div class="card-meta">Argentina &middot; Serves 4</div></div>
+</a>
+<a class="card" href="recipes/argentine-alfajores/" data-title="Argentine Alfajores" data-country="Argentina">
+<img src="https://cdn.dishbystep.com/argentine-alfajores/01-cover.jpg" alt="Argentine Alfajores" loading="lazy">
+<div class="card-body"><h3>Argentine Alfajores</h3><div class="card-meta">Argentina &middot; Serves 12 alfajores</div></div>
+</a>
+<a class="card" href="recipes/air-fryer-pumpkin-spice-donuts/" data-title="Air Fryer Pumpkin Spice Donuts" data-country="United States">
+<img src="https://cdn.dishbystep.com/air-fryer-pumpkin-spice-donuts/01-cover.jpg" alt="Air Fryer Pumpkin Spice Donuts" loading="lazy">
+<div class="card-body"><h3>Air Fryer Pumpkin Spice Donuts</h3><div class="card-meta">United States &middot; Serves 8</div></div>
+</a>
+</div></section>
+
+<!-- TODO: Replace this placeholder form with your newsletter service embed
+     (e.g. Buttondown, ConvertKit, Mailchimp, or Substack). Paste their embed
+     code here and remove the placeholder form + the inline JS handler. -->
+<section class="wrap"><div class="newsletter">
+<h2>Get a new visual recipe every week</h2>
+<p>One dish, photographed step by step, in your inbox. No spam, unsubscribe anytime.</p>
+<form id="signup" action="#" method="post">
+<input type="email" name="email" placeholder="you@example.com" required aria-label="Email address">
+<button type="submit">Sign me up</button>
+</form>
+<p class="note" id="signupNote"></p>
+</div></section>
+
+<script>(function(){
+  var q=document.getElementById('q'), f=document.getElementById('cuisineFilter');
+  var cards=Array.prototype.slice.call(document.querySelectorAll('.card'));
+  var note=document.getElementById('countNote');
+  function apply(){
+    var term=(q.value||'').trim().toLowerCase();
+    var cf=f.value;
+    var shown=0;
+    cards.forEach(function(c){
+      var hay=(c.getAttribute('data-title')+' '+c.getAttribute('data-country')).toLowerCase();
+      var ok=(term===''||hay.indexOf(term)>-1)&&(cf==='all'||c.getAttribute('data-country')===cf);
+      c.style.display=ok?'':'none';
+      if(ok)shown++;
+    });
+    note.textContent=shown+' of '+cards.length+' recipes';
+  }
+  q.addEventListener('input',apply);
+  f.addEventListener('change',apply);
+  var form=document.getElementById('signup');
+  if(form){form.addEventListener('submit',function(e){
+    e.preventDefault();
+    document.getElementById('signupNote').textContent='Thanks for your interest! Our newsletter launches soon.';
+    form.reset();
+  });}
+})();
+</script>
+
+</main>
+<footer class="site-footer"><div class="wrap">
+<span>&copy; 2026 DishByStep. Every recipe, shown step by step.</span>
+<span><a href="about.html">About</a> &middot; <a href="cuisines/index.html">Cuisines</a></span>
+</div></footer>
+</body>
+</html>
